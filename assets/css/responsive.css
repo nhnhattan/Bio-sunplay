@@ -35,7 +35,7 @@
 
   .overlay-open-share {
     align-items: end;
-    margin-bottom: 2rem;
+    margin-bottom: 22rem;
     overflow: hidden;
   }
 
@@ -60,16 +60,27 @@
   }
 
   .modal-body .modal-link-wrapper {
-    width: 100%;
+    width: 80%;
     margin-top: 1rem;
   }
 
   .copy-input {
-    padding: 0.95rem 0.95rem 0.95rem 3rem;
+    flex: 0;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+  }
+  .icon-link-copy {
+    left: 25px;
+  }
+
+  .copy-wrapper {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .copy-button {
-    padding: 1rem 2rem;
+    padding: 0.6rem 1.5rem;
   }
 
   .modal-body .modal-link-wrapper a svg {
