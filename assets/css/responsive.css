@@ -34,14 +34,8 @@
   }
 
   .overlay-open-share .modal {
-    width: 100%;
+    width: 90%;
     padding: 1rem 1rem 5rem 1rem;
-  }
-
-  .overlay-open-share {
-    /* align-items: center; */
-    /* margin-bottom: 22rem; */
-    /* overflow: hidden; */
   }
 
   .overlay-open-share .modal .content-top {
@@ -55,7 +49,7 @@
 
   .flip-card {
     width: 40%;
-    height: 145px;
+    height: 130px;
   }
 
   .modal-body .modal-link-wrapper a {
@@ -72,10 +66,12 @@
 
   .copy-input {
     flex: 0;
-    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    text-overflow: ellipsis;
+    max-width: 50%;
   }
   .icon-link-copy {
-    left: 3%;
+    left: 8%;
   }
 
   .copy-wrapper {
