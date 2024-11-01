@@ -62,7 +62,7 @@
     justify-content: space-evenly;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.4rem 0;
+    padding: 0.4rem 0.8rem;
   }
 
   .modal-body .modal-link-wrapper {
