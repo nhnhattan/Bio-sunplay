@@ -28,6 +28,48 @@
   .brand-information .brand-content {
     font-size: 1.2rem;
   }
+
+  .overlay-open-share .modal {
+    width: 100%;
+  }
+
+  .overlay-open-share {
+    align-items: end;
+    overflow: hidden;
+  }
+
+  .modal-body {
+    padding: 1rem 0.5rem;
+    flex-direction: column;
+  }
+
+  .flip-card {
+    width: 60%;
+  }
+
+  .modal-body .modal-link-wrapper a {
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4rem 0;
+  }
+
+  .modal-body .modal-link-wrapper {
+    width: 100%;
+  }
+
+  .copy-input {
+    padding: 0.95rem 0.95rem 0.95rem 3rem;
+  }
+
+  .copy-button {
+    padding: 1rem 2rem;
+  }
+
+  .modal-body .modal-link-wrapper a svg {
+    margin-right: 1.5rem;
+
+  }
 }
 
 @media (max-width: 1023px) {
