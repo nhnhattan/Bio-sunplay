@@ -1,4 +1,8 @@
 @media (max-width: 739px) {
+  .bio-wrapper  {
+    height: auto;
+  }
+  
   .item-wrapper {
     width: 90%;
   }
