@@ -313,7 +313,8 @@ body {
   border-radius: 0.6rem;
   margin-bottom: 0.5rem;
   color: #000000;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .modal-body .modal-link-wrapper a:hover {
