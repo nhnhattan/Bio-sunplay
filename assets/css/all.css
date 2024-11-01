@@ -351,6 +351,7 @@ body {
   outline: none;
   font-size: 16px;
   cursor: default;
+  position: relative;
 }
 
 .copy-button {
@@ -369,7 +370,9 @@ body {
 
 .icon-link-copy {
   position: absolute;
-  left: 10px;
+  /* left: 10px; */
+  left: 4%;
   color: #888;
   font-size: 16px;
+  z-index: 99;
 }
