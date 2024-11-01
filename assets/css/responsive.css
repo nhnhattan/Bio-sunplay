@@ -8,11 +8,12 @@
   }
 
   .brand-link_item li a {
-    padding: 0.6rem 0;
+    padding: 1.2rem 0;
   }
 
   .brand-link_item li a img {
-    width: 10%;
+    width: 12%;
+    margin-left: 0.3rem;
   }
 
   .brand-link_item li a span {
@@ -22,6 +23,10 @@
   .brand-link_icons ul li {
     margin: 0.5rem 1rem;
     font-size: 1.4rem;
+  }
+
+  .brand-information .brand-content {
+    font-size: 1.2rem;
   }
 }
 
