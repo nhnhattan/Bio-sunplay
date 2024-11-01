@@ -35,6 +35,7 @@
 
   .overlay-open-share {
     align-items: end;
+    margin-bottom: 3rem;
     overflow: hidden;
   }
 
