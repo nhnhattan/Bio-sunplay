@@ -38,6 +38,10 @@
     overflow: hidden;
   }
 
+  .overlay-open-share .modal .content-top {
+    padding: 0 0 1rem 0;
+  }
+
   .modal-body {
     padding: 1rem 0.5rem;
     flex-direction: column;
@@ -56,6 +60,7 @@
 
   .modal-body .modal-link-wrapper {
     width: 100%;
+    margin-top: 1rem;
   }
 
   .copy-input {
@@ -68,7 +73,6 @@
 
   .modal-body .modal-link-wrapper a svg {
     margin-right: 1.5rem;
-
   }
 }
 
