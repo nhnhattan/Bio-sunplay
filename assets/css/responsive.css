@@ -31,12 +31,13 @@
 
   .overlay-open-share .modal {
     width: 100%;
+    padding: 1rem 1rem 5rem 1rem;
   }
 
   .overlay-open-share {
-    align-items: end;
-    margin-bottom: 22rem;
-    overflow: hidden;
+    /* align-items: center; */
+    /* margin-bottom: 22rem; */
+    /* overflow: hidden; */
   }
 
   .overlay-open-share .modal .content-top {
