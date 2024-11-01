@@ -1,0 +1,348 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.bio-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.bio.link/uploads/backgrounds/2024-10-29/SD3i05RDi8VYfcnQwQmHkJmqs8gYgV2Q.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.item-wrapper {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.open-share {
+  background-color: white;
+  padding: 0.8rem 0.9rem;
+  align-self: flex-start;
+  border-radius: 50%;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: scale 0.2s ease-in-out;
+}
+
+.open-share:hover {
+  scale: 1.1;
+}
+
+.open-share i {
+  font-size: 1.3rem;
+}
+
+.brand-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.brand-information .brand-avatar {
+  width: 15%;
+}
+
+.brand-information .brand-avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.brand-information .brand-name {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+.brand-information .brand-content {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.brand-link_wrapper {
+  width: 100%;
+}
+
+.brand-link_wrapper ul {
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-link_item li {
+  width: 100%;
+  position: relative;
+  transition: scale 0.2s ease-in-out;
+}
+
+.brand-link_item li:hover {
+  scale: 1.02;
+}
+
+.brand-link_item li a {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem 0;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+
+.brand-link_item li a img {
+  width: 6%;
+  border-radius: 50%;
+  position: absolute;
+  left: 1%;
+}
+
+.brand-link_item li a span {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 400;
+}
+
+.brand-link_item li:last-child a {
+  margin-bottom: 0;
+}
+
+.brand-link_icons ul {
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-link_icons ul li {
+  margin: 1rem 1.4rem;
+  font-size: 1.8rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.brand-link_icons ul li a {
+  color: rgb(45, 45, 45);
+  font-weight: 400;
+}
+
+.brand-link_icons ul li:hover {
+  scale: 1.15;
+}
+
+.overlay-open-share {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-open-share .modal {
+  width: 28%;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.overlay-open-share .modal .content-top {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 0 1.5rem 0;
+  position: relative;
+}
+
+.overlay-open-share .modal .content-top p {
+  margin: 0;
+}
+
+.overlay-open-share .modal .content-top #close-modal-btn {
+  position: absolute;
+  top: -30%;
+  right: 1%;
+  color: #000000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 5px;
+}
+
+.overlay-open-share .modal .content-top #close-modal-btn:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.overlay-open-share .modal .content-top::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d0d0d0;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+
+.flip-card {
+  width: 40%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.flip-card-front {
+  border: 1.2px solid rgb(218, 218, 218);
+}
+
+.flip-card-front canvas {
+  width: 100%;
+  height: 100%;
+
+}
+
+.flip-card-back {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotateY(-180deg);
+}
+
+.flip-card-back button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+  background-color: #007bff;
+  font-size: 1rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.flip-card-back button:hover {
+  scale: 1.1;
+}
+
+.modal-body .modal-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 58%;
+}
+
+.modal-body .modal-link-wrapper a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.modal-body .modal-link-wrapper a:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.modal-body .modal-link-wrapper a svg {
+  border: rgb(200, 200, 200) solid 1px;
+  padding: 0.6rem 0.5rem;
+  border-radius: 50%;
+}
+
+.copy-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.copy-input {
+  flex: 1;
+  padding: 0.95rem 0.95rem 0.95rem 3.6rem; /* padding for the icon */
+  border: 1px solid #0095f6;
+  outline: none;
+  font-size: 16px;
+  cursor: default;
+}
+
+.copy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.icon-link-copy {
+  position: absolute;
+  left: 10px;
+  color: #888;
+  font-size: 16px;
+}
