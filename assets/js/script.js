@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $("#openShare").click(function () {
     $(".overlay-open-share").fadeIn();
-    $("body").css({
-      overflow: "hidden",
-      position: "fixed",
-      width: "100%",
-    });
+    // $("body").css({
+    //   overflow: "hidden",
+    //   position: "fixed",
+    //   width: "100%",
+    // });
   });
 
   $("#copyButton").click(function () {
@@ -17,10 +17,10 @@ $(document).ready(function () {
 
   $("#close-modal-btn").click(function () {
     $(".overlay-open-share").hide();
-    $("body").css({
-      overflow: "auto",
-      position: "static",
-    });
+    // $("body").css({
+    //   overflow: "auto",
+    //   position: "static",
+    // });
   });
 
   const canvas = document.getElementById("myCanvas");
@@ -45,10 +45,10 @@ $(document).ready(function () {
   $(window).click(function (event) {
     if ($(event.target).is(".overlay-open-share")) {
       $(".overlay-open-share").hide();
-      $("body").css({
-        overflow: "auto",
-        position: "static",
-      });
+      // $("body").css({
+      //   overflow: "auto",
+      //   position: "static",
+      // });
     }
   });
 });
